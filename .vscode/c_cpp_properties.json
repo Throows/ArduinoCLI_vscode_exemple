@@ -5,7 +5,10 @@
             "includePath": [
                 "${workspaceFolder}/**",
                 "${env:APPDATA}/Local/Arduino15/packages/esp32/hardware/esp32/2.0.4/**",
-                "${env:APPDATA}/Local/Arduino15/packages/esp32/tools/**"
+                "${env:APPDATA}/Local/Arduino15/packages/esp32/tools/**",
+                "${env:APPDATA}/Local/Arduino15/packages/arduino/hardware/avr/1.8.5/**",
+                "${env:APPDATA}/Local/Arduino15/packages/arduino/tools/**"
+
             ],
             "forcedInclude": [
                 "${env:APPDATA}/Local/Arduino15/packages/esp32/hardware/esp32/2.0.4/cores/esp32/Arduino.h"

@@ -39,8 +39,31 @@ For now the way to make think work properly is by adding task. But in the future
 And add shortcuts too.
 
 ## Documentation
- 
-    Under Heavy Development
+
+ - c_cpp_properties.json 
+
+includePath for arduino board (Default path) are :
+        
+        "${env:APPDATA}/Local/Arduino15/packages/arduino/hardware/avr/1.8.5/**"
+        "${env:APPDATA}/Local/Arduino15/packages/arduino/tools/**"
+
+includePath for the espressif boards (Default again) are :
+
+        "${env:APPDATA}/Local/Arduino15/packages/esp32/hardware/esp32/2.0.4/**"
+        "${env:APPDATA}/Local/Arduino15/packages/esp32/tools/**"
+
+Dont forget to include the right `Arduino.h` header file. in the forced include section.
+
+For ESP :
+
+        "${env:APPDATA}/Local/Arduino15/packages/esp32/hardware/esp32/2.0.4/cores/esp32/Arduino.h"
+
+For Arduino :
+
+        "${env:APPDATA}/Local/Arduino15/packages/arduino/hardware/avr/1.8.5/cores/arduino/Arduino.h"        
+
+
+
 
 ## Frequent Issues
 
