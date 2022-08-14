@@ -25,10 +25,13 @@ This repository is destinated to show a simple way to integrate arduino to VS Co
 We added build output to make build a lot faster.
 
 ## How To Install
- 1 - Clone repository\
+ 1 - Install Arduino CLI [Here](https://github.com/arduino/arduino-cli) And configure it [Documentation](https://arduino.github.io/arduino-cli/)\
  2 - Install Task Button extension [Here](https://marketplace.visualstudio.com/items?itemName=spencerwmiles.vscode-task-buttons)\
- 3 - Setup board/Include files in c_cpp_properties.json and task.json (working with esp32:esp32:esp32 S2 and S3, arduino:avr:uno and arduino:avr:mega)\
- 4 - Use tasks button in the buttom bar to compile and upload your code to the board (Compile program / Upload program / Monitor program) 
+ 3 - Clone repository\
+ 4 - Setup board/Include files in c_cpp_properties.json and task.json (working with esp32:esp32:esp32 S2 and S3, arduino:avr:uno and arduino:avr:mega)\
+ 5 - Use tasks button in the buttom bar to compile and upload your code to the board (Compile program / Upload program / Monitor program) 
+
+Last Tested Arduino CLI Version : 0.26.0
 
 ## Development Planning
 
