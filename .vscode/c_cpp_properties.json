@@ -1,0 +1,37 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${env:APPDATA}/Local/Arduino15/packages/esp32/hardware/esp32/2.0.4/**",
+                "${env:APPDATA}/Local/Arduino15/packages/esp32/tools/**"
+            ],
+            "forcedInclude": [
+                "${env:APPDATA}/Local/Arduino15/packages/esp32/hardware/esp32/2.0.4/cores/esp32/Arduino.h"
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": false,
+                "path": [
+                    "${workspaceFolder}/**",
+                    "${env:APPDATA}/Local/Arduino15/packages/esp32/hardware/esp32/2.0.4/**",
+                    "${env:APPDATA}/Local/Arduino15/packages/esp32/tools/**"
+                ]
+            },
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "USBCON",
+                "ARDUINO=10819"
+            ],
+            "windowsSdkVersion": "10.0.19041.0",
+            "compilerPath": "C:/Users/romai/AppData/Local/Arduino15/packages/esp32/tools/xtensa-esp32s2-elf-gcc/gcc8_4_0-esp-2021r2-patch3/bin/xtensa-esp32s2-elf-gcc-8.4.0.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "${default}",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,19 @@
+{
+    "VsCodeTaskButtons.tasks": [
+        {
+            "label": "Compile Program",
+            "task": "Build Project",
+            "tooltip": "Compile the program for the default board"
+        },
+        {
+            "label": "Upload Program",
+            "task": "Upload Project",
+            "tooltip": "Upload the program for the default board"
+        },
+        {
+            "label": "Monitor Program",
+            "task": "Monitor Project",
+            "tooltip": "Open the monitor console for the default board"
+        }
+    ]
+}

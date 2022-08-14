@@ -1,0 +1,5 @@
+[Settings]
+name=ArduinoCLI_vscode
+version=1.0
+author=Romain Berthoule
+date=08/14/22

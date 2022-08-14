@@ -1,0 +1,74 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Project",
+            "type": "shell",
+            "command": "arduino-cli",
+            "args": [
+                "compile",
+                "-b",
+                "${input:target}",
+                "--build-cache-path",
+                "${workspaceFolder}/cache",
+                "--build-path",
+                "${workspaceFolder}/build",
+                "--output-dir",
+                "${workspaceFolder}/output",
+                "--log-level",
+                "trace",
+                "-v",
+                "${workspaceFolder}/${workspaceFolderBasename}"
+            ],
+            "group": "none",
+            "problemMatcher": "$gcc",
+        },
+        {
+            "label": "Upload Project",
+            "type": "shell",
+            "command": "arduino-cli",
+            "args": [
+                "upload",
+                "-b",
+                "${input:target}",
+                "-p",
+                "${input:port}",
+                "--input-dir",
+                "${workspaceFolder}/build",
+                "-v",
+                "/${workspaceFolderBasename}"
+            ],
+            "group": "none",
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "Monitor Project",
+            "type": "shell",
+            "command": "arduino-cli",
+            "args": [
+                "monitor",
+                "-p",
+                "${input:port}"
+            ],
+            "group": "none",
+            "problemMatcher": "$gcc"
+        }
+    ],
+    "inputs": [
+        {
+            "id": "target",
+            "type": "pickString",
+            "description": "board name given by arduino-cli board listall",
+            "options": [ "esp32:esp32:esp32", "esp32:esp32:esp32s2" , "esp32:esp32:esp32s3", "arduino:avr:uno", "arduino:avr:mega" ],
+            "default": "esp32:esp32:esp32s2"
+        },
+        {
+            "id": "port",
+            "type": "promptString",
+            "description": "port of the board (ex:com3)",
+            "default": "com3"
+        },
+    ]
+}
